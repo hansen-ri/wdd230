@@ -57,7 +57,7 @@
   #content {
       grid-area: content;
       display: grid;
-      grid-template-columns: minmax(0, 1fr);
+      grid-template-columns: 1fr;
       grid-template-areas: 
           'als'
           'chickfila'
@@ -77,18 +77,19 @@
     min-width: 220px;
   }
   
-  @media screen and (min-width: 475) {
+  @media screen and (min-width: 475px) {
     #content {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-columns: 1fr 1fr;
       grid-template-areas:
         "als chickfila"
         "sa";
     }
   }
   
-  @media screen and (min-width: 750) {
-    #content {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  @media screen and (min-width: 750px) {
+
+    #content { 
+        grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas:
         "als chickfila sa";
     }
