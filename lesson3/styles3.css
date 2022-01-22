@@ -1,0 +1,96 @@
+body footer {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#banner {
+    font-family: 'Satisfy', cursive;
+    font-size: 3em;
+    min-width: 412px;
+    color: #9C3848;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    /* background-color: #adcad6; */
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #F5E663;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ffad69;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9C3848;
+}
+
+li a {
+    color: #F5E663;
+    text-align: center;
+    padding: 15px;
+    padding-top: 15px;
+    text-decoration: none;
+}
+
+li {
+    border: solid;
+    border-width: 2px;
+    border-color: #9C3848;
+}
+
+li a:hover:not(.active) {
+    background-color: #adcad6;
+    color: #006e90;
+}
+
+.active {
+    background-color: #ffad69;
+    color: #9C3848;
+}
+
+nav ul li a {
+    display: block;
+}
+
+#swatch {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #F5E663;
+    color: #9C3848;
+}
+
+@media screen and (min-width: 600px) {
+    section {
+        grid-template-columns: auto 1fr;
+    }
+    #flex-container {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 auto;
+    }
+    div {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #banner {
+        font-size: 4em;
+    }
+}
