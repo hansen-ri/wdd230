@@ -13,7 +13,6 @@ body footer {
 body {
     font-family: 'Ubuntu', sans-serif;
     padding: 10px;
-    /* background-color: #adcad6; */
 }
 
 section {
@@ -22,13 +21,44 @@ section {
     background-color: #F5E663;
 }
 
-div {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #ffad69;
+img {
+    display: block;
+    margin: auto;
 }
 
-ul {
+div {
+    background-color: #adcad6;
+    text-align: center;
+    color: #006e90;
+    line-height: 1.6;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #adcad6;
+    text-align: center;
+    color: #006e90;
+}
+
+article {
+    margin: 5vw;
+}
+
+.colors {
+    margin: .5vw;
+}
+
+p {
+    margin: 2vw;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.details {
+    margin: 3vw;
+    text-align: left;
+    line-height: 1.6;
+}
+
+#flex-container {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -42,13 +72,11 @@ li a {
     padding: 15px;
     padding-top: 15px;
     text-decoration: none;
-}
-
-li {
     border: solid;
     border-width: 2px;
     border-color: #9C3848;
 }
+
 
 li a:hover:not(.active) {
     background-color: #adcad6;
@@ -84,13 +112,16 @@ footer {
     nav ul li {
         flex: 1 1 auto;
     }
-    div {
-        grid-template-columns: 1fr 1fr;
+    #swatch {
+        transform: rotate(270deg);
     }
 }
 
 @media screen and (min-width: 992px) {
     #banner {
         font-size: 4em;
+    }
+    #window {
+        grid-template-columns: 1fr 1fr;
     }
 }
