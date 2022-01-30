@@ -1,0 +1,203 @@
+body footer {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+footer {
+  display: block;
+}
+
+#pagecredits {
+  min-width: 347px;
+}
+
+#update {
+  min-width: 255px;
+}
+
+#footerlink {
+  min-width: 192px;
+}
+
+date {
+  font-family: "Satisfy", cursive;
+  color: #9c3848;
+}
+
+#banner {
+  font-family: "Satisfy", cursive;
+  font-size: 2.75em;
+  min-width: 385px;
+  color: #9c3848;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background-color: #f5e663;
+}
+
+#headerdate {
+  grid-row: auto;
+  background-color: #f5e663;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.maindiv {
+  line-height: 1.6;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  color: #006e90;
+}
+
+article {
+  margin: 5vw;
+}
+
+.colors {
+  margin: 0.5vw;
+}
+
+p {
+  margin: 2vw;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.details {
+  margin: 3vw;
+  text-align: left;
+  line-height: 1.6;
+}
+
+#flex-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9c3848;
+}
+
+li a {
+  color: #f5e663;
+  text-align: center;
+  padding: 15px;
+  padding-top: 15px;
+  text-decoration: none;
+  border: solid;
+  border-width: 2px;
+  border-color: #9c3848;
+}
+
+li a:hover:not(.active) {
+  background-color: #adcad6;
+  color: #006e90;
+}
+
+.active {
+  background-color: #ffad69;
+  color: #9c3848;
+}
+
+nav ul li a {
+  display: block;
+}
+
+/* Style for hamburger menu */
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  color: #f5e663;
+  background-color: #9c3848;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a.ham::before {
+  content: "\2630";
+}
+
+.navigation a:hover {
+  color: #006e90;
+  background-color: #adcad6;
+}
+
+.responsive li {
+  display: block;
+}
+
+.responsive a.ham::before {
+  content: "\2573";
+}
+
+/*End of Style for hamburger menu */
+#swatch {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #f5e663;
+  color: #9c3848;
+}
+
+@media screen and (min-width: 647px) {
+  section {
+    grid-template-columns: auto 1fr;
+  }
+  #flex-container {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 auto;
+  }
+  #swatch {
+    transform: rotate(270deg);
+  }
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #banner {
+    font-size: 4em;
+  }
+  #window {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer {
+    display: flex;
+  }
+}

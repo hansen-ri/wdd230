@@ -23,28 +23,44 @@
   <body id="content">
     <section>
       <img src="Images3/sunburst-145893_1280.png" alt="Sunburst Logo" />
-      <h1 id="banner">City of Goodyear Chamber of Commerce</h1>
+      <div id="headerdate">
+        <h1 id="banner">City of Goodyear Chamber of Commerce</h1>
+        <date></date>
+      </div>
     </section>
     <nav>
-      <ul id="flex-container">
-        <li><a href="index.html">Home</a></li>
+      <ul id="flex-container" class="navigation">
+        <li><a class="ham" href="#"> Menu</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
         <li><a href="target-audience.html">Target Audience</a></li>
         <li><a href="typography.html">Typography</a></li>
-        <li><a class="active" href="color-scheme.html">Color Scheme</a></li>
+        <li><a href="color-scheme.html">Color Scheme</a></li>
+        <li><a href="index.html">Future Section</a></li>
       </ul>
     </nav>
     <h1>Color Scheme</h1>
-    <p class="colors">#006E90 used for font color menu hover.</p>
-    <p class="colors">#ADCAD6 used for background menu hover and body content background.</p>
-    <p class="colors">#F5E663 used for header & footer background.</p>
-    <p class="colors">#FFAD69 used for active menu background.</p>
-    <p class="colors">#9C3848 used for header & footer font, active menu font, & inactive menu background.</p>
+    <div class="maindiv">
+      <p class="colors">#006E90 used for font color menu hover.</p>
+      <p class="colors">
+        #ADCAD6 used for background menu hover and body content background.
+      </p>
+      <p class="colors">#F5E663 used for header & footer background.</p>
+      <p class="colors">#FFAD69 used for active menu background.</p>
+      <p class="colors">
+        #9C3848 used for header & footer font, active menu font, & inactive menu
+        background.
+      </p>
 
-    <img id="swatch" src="Images3/City of Commerce.png" alt="coolers swatch" />
-
+      <img
+        id="swatch"
+        src="Images3/City of Commerce.png"
+        alt="coolers swatch"
+      />
+    </div>
   </body>
   <footer>
-    <a href="../index.html">Back to Assignment Portal</a>
+    <p id="footerlink"><a href="../index.html">Back to Assignment Portal</a></p>
+    <img src="Images3/footerLogo.png" alt="footer-logo.png" />
     <p id="pagecredits"></p>
     <p id="update"></p>
   </footer>
