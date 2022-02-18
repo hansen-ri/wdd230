@@ -1,0 +1,12 @@
+main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(auto, 7);
+    margin: auto;
+    grid-gap: 10px;
+    align-content: center;
+}
+
+picture {
+    margin: auto;
+}
