@@ -78,7 +78,25 @@ img {
   min-width: 95vw;
   margin-left: auto;
   margin-right: auto;
+}
 
+#discover_div {
+  display: grid;
+  grid-template-columns: 375px 375px 375px;
+  grid-template-rows: auto auto auto;
+}
+
+.discover_img {
+  opacity: 1;  
+}
+
+.discover_img:hover {
+  opacity: 0.3;
+}
+
+.img_head, .img_p {
+  color: white;
+  padding: 16px;
 }
 
 article {

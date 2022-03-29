@@ -1,0 +1,55 @@
+#logo-img2 {
+    display: none;
+}
+
+#logo-img3 {
+    display: none;
+    width: 100%;
+    /* height: auto; */
+}
+
+#header-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('/SnapDragon Cakes/Images/blue_icing.jpg');
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10%; /* 286 pixels */
+}
+
+#header-text {
+    font-family: 'Lily Script One', cursive;
+    text-align: center;
+    font-size: 3vw;
+    color: #A4161A;
+}
+
+
+@media screen and (min-width: 647px) {
+    #logo-img2 {
+        display: block;
+    }
+    #logo-img1 {
+        display: none;
+    }
+    #logo-img3 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #logo-img3 {
+        display: block;
+    }
+    #logo-img1 {
+        display: none;
+    }
+    #logo-img2 {
+        display: none;
+    }
+}
