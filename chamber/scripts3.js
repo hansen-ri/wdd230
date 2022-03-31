@@ -20,7 +20,7 @@ if (fulldate.includes("Wednesday") || fulldate.includes("Thursday") || fulldate.
   document.getElementById("date").style.display = "None";
 };
 
-
+// hamburger menu 
 const hambutton = document.querySelector(".ham");
 const mainnav = document.querySelector(".navigation");
 
