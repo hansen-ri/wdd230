@@ -49,11 +49,15 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .header {
   display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
@@ -87,20 +91,62 @@ body {
   color: #fff8f0;
 }
 
-/* hamburger menu */
-.navigation {
-  float: right;
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #a4161a;
+  color: #fff8f0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Lily Script One", cursive;
 }
+
+.footer-logo {
+  padding: 10px;
+}
+
+/* Make Footer Links Pop */
+footer a:hover img {
+  transform: scale(1.25);
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  border-radius: 15px;
+}
+
+#phone-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a[href^="tel:"] {
+  color: #fff8f0;
+  text-decoration: none;
+}
+
+/* hamburger menu */
 
 .navigation {
   list-style: none;
   padding: 0;
+  float: right;
 }
 
 .navigation a {
   display: block;
   color: #fff8f0;
   background-color: #a4161a;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+  border-radius: 10px;
+  border-color: #ffee32;
+  border-width: 3px;
+  border: #ffee32;
 }
 
 #flex-container li:first-child {
@@ -117,7 +163,7 @@ body {
 
 .navigation a:hover {
   color: #432818;
-  background-color: #ffee32;
+  background-color: #ffca3a;
 }
 
 .display-menu li {
@@ -125,11 +171,11 @@ body {
 }
 
 #flex-container2 {
-    margin: 0;
-    grid-column: 1 / span 2;
-    /* float: left; */
+  margin: 0;
+  grid-column: 1 / span 2;
+  width: 100%;
+  margin-bottom: 25px;
 }
-
 
 /* a.ham::before {
   content: "\2573"; "X" Symbol
@@ -151,30 +197,53 @@ body {
 }
 
 #page-title {
-    margin: auto;
-    text-align: center;
-    padding: 30px 0px;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0px;
 }
 
+/* SlideShow */
+/* .mySlides {
+  display: none;
+}
+
+#slide-container {
+  padding: 25 15;
+  justify-content: center;
+  position: relative;
+} */
+
 #gallery-window {
-    margin: 20px 10px;
+  margin: 20px 10px;
 }
 
 #gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 95vw;
-    justify-content: space-evenly;
-    gap: 5%;
-    row-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95vw;
+  justify-content: space-evenly;
+  gap: 5%;
+  row-gap: 10px;
 }
 
 .cake {
-    max-width: 42vw;
-    max-height: 42vw;
+  max-width: 42vw;
+  max-height: 42vw;
 }
 
+#cupcake {
+  display: none;
+}
+
+.page {
+  background-image: url("Images/icing-full-size.jpeg");
+  background-size: cover;
+  /* https://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css#:~:text=%20required%20a%20specific%20colour%2C%20so%20filter%20didn't%20work%20for%20me. */
+  background-image: linear-gradient(to right, #a4161a, #a4161a),
+    url("Images/icing-full-size.jpeg");
+  background-blend-mode: overlay;
+}
 
 @media screen and (min-width: 565px) {
   /* Company Name */
@@ -216,5 +285,8 @@ body {
   }
   #flex-container2 {
     display: none;
+  }
+  #cupcake {
+    display: inline-flex;
   }
 }

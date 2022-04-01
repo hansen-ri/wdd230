@@ -1,0 +1,26 @@
+#FAQS {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 15vh;
+    padding-top: 10vh;
+    background-image: url("Images/icing-full-size.jpeg");
+    background-size: cover;
+/* https://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css#:~:text=%20required%20a%20specific%20colour%2C%20so%20filter%20didn't%20work%20for%20me. */
+    background-image: linear-gradient(to right, #a4161a, #a4161a), url("Images/icing-full-size.jpeg");
+    background-blend-mode: overlay;
+    
+}
+
+.faq-window {
+    margin: 10px;
+    padding: 20px;
+    min-width: 350px;
+    max-width: 40vw;
+    min-height: 15vw;
+    background-color: whitesmoke;
+}
+
+div > p {
+    font-size: 25px;
+}
