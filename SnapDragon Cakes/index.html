@@ -10,6 +10,7 @@
       content="Main page for SnapDragon Cake Co., Idaho Falls Area, Custom Cakes Small Business. Created and run by Tara Eldridge."
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap"
       rel="stylesheet"
@@ -31,6 +32,7 @@
             <li><a class="ham" href="#"> Menu</a></li>
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="faqs.html">FAQ's</a></li>
+            <li><a href="options.html">Cake Options</a></li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
@@ -43,33 +45,36 @@
         <ul id="flex-container2" class="navigation">
           <li><a class="active" href="index.html">Home</a></li>
           <li><a href="faqs.html">FAQ's</a></li>
+          <li><a href="options.html">Cake Options</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </div>
-    <h1 id="page-title">Cake Gallery</h1>
-    <!-- <section id="slide-container">
-        <img class="mySlides w3-animate-right" src="Images/cake1.jpeg" alt="cake1" style="width:75%">
-        <img class="mySlides w3-animate-right" src="Images/cake2.jpeg" alt="cake2" style="width:75%">
-        <img class="mySlides w3-animate-right" src="Images/cake3.jpeg" alt="cake3" style="width:75%">
-        <img class="mySlides w3-animate-right" src="Images/cake4.jpeg" alt="cake4" style="width:75%">
-        <img class="mySlides w3-animate-right" src="Images/cake5.jpeg" alt="cake5" style="width:75%">
-        <img class="mySlides w3-animate-right" src="Images/cake6.jpeg" alt="cake6" style="width:75%">
-        <img class="mySlides w3-animate-right" src="Images/cake7.jpeg" alt="cake7" style="width:75%">
-        <img class="mySlides w3-animate-right" src="Images/cake8.jpeg" alt="cake8" style="width:75%">
-      </section> -->
-    <div class="page" id="gallery-window">
-      <section id="gallery">
-        <img class="cake page-item" src="Images/cake1.jpeg" alt="cake1" />
-        <img class="cake page-item" src="Images/cake2.jpeg" alt="cake2" />
-        <img class="cake page-item" src="Images/cake3.jpeg" alt="cake3" />
-        <img class="cake page-item" src="Images/cake4.jpeg" alt="cake4" />
-        <img class="cake page-item" src="Images/cake5.jpeg" alt="cake5" />
-        <img class="cake page-item" src="Images/cake6.jpeg" alt="cake6" />
-        <img class="cake page-item" src="Images/cake7.jpeg" alt="cake7" />
-        <img class="cake page-item" src="Images/cake8.jpeg" alt="cake8" />
-      </section>
+    <h1 id="page-title">Cake Gallery</h1> 
+    <div class="page">
+      <h2 id="filler">More Content</h2>
+      <div id="gallery-window">
+      <div id="bio">
+        <h2><u>About SnapDragon Cake Co.</u></h2>
+        <p>Located in Idaho Falls, Snapdragon Cakes Co is a custom-order bakery specializing in decorated cakes for any and all occasions. Whether the cake design is yours, mine, or a little bit of both, your ideal cake for your event will be something special! </p>
+        <p>Please get in contact with me any way you prefer so that we can create the cake you need :D</p>
+      </div>
+      <div id="slide-with-buttons">
+      <button id="left-btn" onclick="plusDivs(-1)">&#10094</button>
+      <section id="slide-container">
+        <img class="mySlides" src="Images/cake1.jpeg" alt="cake1" style="width:75%">
+        <img class="mySlides" src="Images/cake2.jpeg" alt="cake2" style="width:75%">
+        <img class="mySlides" src="Images/cake3.jpeg" alt="cake3" style="width:75%">
+        <img class="mySlides" src="Images/cake4.jpeg" alt="cake4" style="width:75%">
+        <img class="mySlides" src="Images/cake5.jpeg" alt="cake5" style="width:75%">
+        <img class="mySlides" src="Images/cake6.jpeg" alt="cake6" style="width:75%">
+        <img class="mySlides" src="Images/cake7.jpeg" alt="cake7" style="width:75%">
+        <img class="mySlides" src="Images/cake8.jpeg" alt="cake8" style="width:75%">
+      </section> 
+      <button id="right-btn" onclick="plusDivs(1)">&#10095</button>
+      </div>
+    </div>
     </div>
     <footer>
       <img id="cupcake" src="Images/Cupcake Logo Small.png" alt="Cupcake Logo" />
@@ -79,11 +84,10 @@
         <a href="https://www.facebook.com/SnapdragonCakeCo"><img class="footer-logo" src="Images/FB Logo.png" alt="FB Logo" /></a>
         <a href="https://www.instagram.com/snapdragoncakeco/"><img class="footer-logo" src="Images/IG Logo.png" alt="IG Logo" /></a>
         <a href="https://m.me/SnapdragonCakeCo"><img class="footer-logo" src="Images/FBM Logo.png" alt="FBM Logo" /></a>
-        <a href="#"><img class="footer-logo" src="Images/Email Logo.png" alt="Email Logo" /></a>
-      </div>
+        <a href="https://venmo.com/code?user_id=2394431198068736668&created=1623528292"><img class="footer-logo" src="Images/white-venmo.png" alt="Venmo Logo" /></a>      </div>
       <div id="phone-number">
-        <img class="footer-logo" src="Images/Phone Logo.png" alt="Phone Logo" />
-        <a href="tel:2084195156"><h3>(208) 419-5156</h3></a>
+        <a href="tel:2084195156"><img class="footer-logo" src="Images/Phone Logo.png" alt="Phone Logo" /></a>
+        <a href="tel:2084195156" id="tel-number"><h3>(208) 419-5156</h3></a>
       </div>
       <img id="cupcake" src="Images/Cupcake Logo Small.png" alt="Cupcake Logo" />
     </footer>

@@ -1,0 +1,39 @@
+h2 {
+    margin-top: 0;
+}
+
+.options {
+    margin: 10px;
+    padding: 20px;
+    min-width: 350px;
+    max-width: 40vw;
+    min-height: 15vw;
+    background-color: whitesmoke;
+    border: #a4161a;
+    border-width: 5px;
+    border-style: solid;
+    opacity: .95;
+}
+
+#options-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: ; */
+}
+
+p ul {
+    font-size: x-large;
+}
+
+#disclaimer {
+    max-height: 200px;
+}
+
+#filler {
+    opacity: 0;
+}
+

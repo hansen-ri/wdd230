@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
     <meta name="author" content="Riley Hansen" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="faqs.css">
+    <link rel="stylesheet" href="options.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap"
       rel="stylesheet"
@@ -21,15 +21,17 @@
   <body>
     <header>
       <div class="header">
-        <a href="index.html" class="logo" id="logo-short">S D C Co.</a>
-        <a href="index.html" class="logo" id="logo-full">SnapDragon Cake Co.</a>
+        <a href="#index.html" class="logo" id="logo-short">S D C Co.</a>
+        <a href="#index.html" class="logo" id="logo-full"
+          >SnapDragon Cake Co.</a
+        >
         <nav>
           <ul id="flex-container" class="navigation">
             <li><a class="ham" href="#"> Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="faqs.html">FAQ's</a></li>
+            <li><a href="faqs.html">FAQ's</a></li>
             <li><a href="options.html">Cake Options</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
+            <li><a class="active" href="pricing.html">Pricing</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </nav>
@@ -40,51 +42,80 @@
       <nav>
         <ul id="flex-container2" class="navigation">
           <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="faqs.html">FAQ's</a></li>
+          <li><a href="faqs.html">FAQ's</a></li>
           <li><a href="options.html">Cake Options</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
+          <li><a class="active" href="pricing.html">Pricing</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </div>
-    <h1 id="page-title">Frequently Asked Questions (FAQ)</h1>
-    <div class="page" id="FAQS">
-      <div class="faq-window page-item">
-        <h1>How does your pricing work?</h1>
+    <h1 id="page-title">Cake Options</h1>
+    <div class="page" id="options-page">
+      <div class="options" id="flavors">
+        <h2>Cake Flavors</h2>
+        <ul>
+          <li>Chocolate</li>
+          <li>Vanilla</li>
+          <li>Red Velvet</li>
+          <li>Funfetti</li>
+          <li>Lemon</li>
+          <li>Butter Pecan</li>
+          <li>Spice</li>
+          <li>Carrot</li>
+          <li>Almond</li>
+        </ul>
+        <hr />
+        <h2>Specialty Flavors ($10 Extra)</h2>
+        <ul>
+          <li>Pineapple Cream</li>
+          <li>German Chocolate</li>
+          <li>Tres Leches</li>
+          <li>Coconut Cream</li>
+          <li>"Better than..."</li>
+        </ul>
+      </div>
+      <div class="options" id="frosting">
+        <h2>Frosting</h2>
+        <ul>
+          <li>Buttercream</li>
+          <li>Fondant</li>
+          <li>Cream Cheese (+$5)</li>
+          <li>Chocolate (+$5)</li>
+        </ul>
+        <hr>
+      <!-- </div>
+      <div class="options" id="fillings"> -->
+        <h2>Fillings</h2>
+        <ul>
+          <li>Raspberry</li>
+          <li>Strawberry</li>
+          <li>Blueberry</li>
+          <li>Lemon</li>
+          <li>Bavarian Creme</li>
+          <li>Fudge</li>
+          <li>Fruit Cremes.</li>
+          <li>Candy</li>
+          <li>Orea Creme</li>
+        </ul>
+      </div>
+      <div class="options" id="disclaimer">
+        <h2>But Wait!</h2>
         <p>
-          Cake pricing depends on the size of the cake and the amount of
-          decoration involved with your cake.
+          Options are not limited to those listed here! These flavors are just
+          the base ones! If there are other flavors that you have heard of that
+          you would like, I can possibly do those as well. I can also suggest
+          some popular flavor combinations that people have ordered before. Just
+          let me know and we can brainstorm together!
         </p>
-        <p><a href="pricing.html">Pricing Page ></a></p>
-      </div>
-      <div class="faq-window page-item">
-        <h1>How much notice do I need to give for a custom cake?</h1>
-        <p>At least a week's notice is preferable.</p>
-        <p><a href="https://m.me/SnapdragonCakeCo"><img id="mini-fbm" src="Images/mini-fbm.PNG">Message Me!</a></p>
-      </div>
-      <div class="faq-window page-item">
-        <h1>What flavors do you offer?</h1>
-        <p>
-          We can provide you a list of cake possibilities and recommendations.
-        </p>
-        <p><a href="options.html">Options Page ></a></p>
-      </div>
-      <div class="faq-window page-item">
-        <h1>Do you deliver?</h1>
-        <p>
-          Delivery is an option, and when possible an additional fee will be
-          added that appropriately reflects the distance of the delivery.
-        </p>
-        <p><a href="https://goo.gl/maps/zjNzisrTm9L58XZy7"><img src="Images/mini-GMaps.png">Check Delivery Distance</a></p>
-      </div>
-      <div class="faq-window page-item">
-        <h1>Do you require a deposit?</h1>
-        <p>For larger/complex cakes a deposit may be required.</p>
-        <p><a href="https://venmo.com/code?user_id=2394431198068736668&created=1623528292"><img src="Images/red-venmo.png">Venmo ></a></p>
       </div>
     </div>
+    <h3 id="filler">Bottom Filler</h3>
     <footer>
-      <img id="cupcake" src="Images/Cupcake Logo Small.png" alt="Cupcake Logo" />
+      <img
+        id="cupcake"
+        src="Images/Cupcake Logo Small.png"
+        alt="Cupcake Logo"
+      />
       <h1 id="logo-full">SnapDragon Cakes Co.</h1>
       <h1 id="logo-short">S D C Co.</h1>
       <div id="social">
@@ -103,7 +134,11 @@
         <a href="tel:2084195156"><img class="footer-logo" src="Images/Phone Logo.png" alt="Phone Logo" /></a>
         <a href="tel:2084195156" id="tel-number"><h3>(208) 419-5156</h3></a>
       </div>
-      <img id="cupcake" src="Images/Cupcake Logo Small.png" alt="Cupcake Logo" />
+      <img
+        id="cupcake"
+        src="Images/Cupcake Logo Small.png"
+        alt="Cupcake Logo"
+      />
     </footer>
   </body>
   <script src="scripts.js"></script>

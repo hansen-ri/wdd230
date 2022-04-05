@@ -19,6 +19,10 @@
     max-width: 40vw;
     min-height: 15vw;
     background-color: whitesmoke;
+    border: #a4161a;
+    border-width: 5px;
+    border-style: solid;
+    opacity: .95;
 }
 
 div > p {

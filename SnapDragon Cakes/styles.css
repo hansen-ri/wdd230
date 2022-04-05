@@ -1,48 +1,3 @@
-/* #header-img {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url('/SnapDragon Cakes/Images/blue_icing.jpg');
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#header-text {
-    font-family: 'Lily Script One', cursive;
-    text-align: center;
-    font-size: 2.5em;
-    color: #A4161A;
-}
-
-
-/* @media screen and (min-width: 647px) {
-    #logo-img2 {
-        display: block;
-    }
-    #logo-img1 {
-        display: none;
-    }
-    #logo-img3 {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    #logo-img3 {
-        display: block;
-    }
-    #logo-img1 {
-        display: none;
-    }
-    #logo-img2 {
-        display: none;
-    }
-} */
-
 * {
   box-sizing: border-box;
 }
@@ -75,7 +30,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
-  border-radius: 4px;
+  border-radius: 10px;
   margin: 0px 10px;
 }
 
@@ -143,10 +98,10 @@ a[href^="tel:"] {
   text-align: center;
   text-decoration: none;
   font-size: x-large;
-  border-radius: 10px;
-  border-color: #ffee32;
+  /* border-radius: 10px; */
+  /* border-color: #ffee32;
   border-width: 3px;
-  border: #ffee32;
+  border: #ffee32; */
 }
 
 #flex-container li:first-child {
@@ -202,31 +157,6 @@ a[href^="tel:"] {
   padding: 30px 0px;
 }
 
-/* SlideShow */
-/* .mySlides {
-  display: none;
-}
-
-#slide-container {
-  padding: 25 15;
-  justify-content: center;
-  position: relative;
-} */
-
-#gallery-window {
-  margin: 20px 10px;
-}
-
-#gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 95vw;
-  justify-content: space-evenly;
-  gap: 5%;
-  row-gap: 10px;
-}
-
 .cake {
   max-width: 42vw;
   max-height: 42vw;
@@ -243,9 +173,21 @@ a[href^="tel:"] {
   background-image: linear-gradient(to right, #a4161a, #a4161a),
     url("Images/icing-full-size.jpeg");
   background-blend-mode: overlay;
+  padding-bottom: 15vh;
 }
 
-@media screen and (min-width: 565px) {
+#tel-number {
+  display: none;
+}
+
+@media screen and (min-width: 510px) {
+  #tel-number {
+    display: block;
+  }
+}
+
+/* 565 */
+@media screen and (min-width: 680px) {
   /* Company Name */
   /* \/ \/ \/ */
   #logo-short {
@@ -257,7 +199,8 @@ a[href^="tel:"] {
   /* /\ /\ /\ */
 }
 
-@media screen and (min-width: 872px) {
+/* 872px */
+@media screen and (min-width: 964px) {
   .header a {
     float: none;
     display: block;
