@@ -76,6 +76,11 @@ button:hover {
     text-align: center;
 }
 
+#contact-btn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
 #gallery-window {
     display: flex;
     flex-wrap: wrap;

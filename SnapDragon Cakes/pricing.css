@@ -40,7 +40,7 @@ img ~ p {
   border-width: 5px;
   border-style: solid;
   border-bottom: 0;
-  font-size: 40px;
+  /* font-size: 40px; */
 }
 
 #top-title {
